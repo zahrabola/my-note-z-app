@@ -18,7 +18,7 @@ code {
 	margin-left: auto;
 	padding-right: 10px;
 	padding-left: 10px;
-	min-height: 200vh;
+	min-height: 100vh;
 }
 .notes-list {
 	display: grid;
@@ -39,16 +39,8 @@ code {
 	justify-content: space-between;
 	white-space: pre-wrap;
 }
-.note-new{
+.note.new{
   background-color: #67d7cc;
-	border-radius: 10px;
-	padding:10px;
-  margin: 10px;
-	min-height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	white-space: pre-wrap;
 }
 .note-footer {
 	display: flex;
@@ -78,7 +70,7 @@ textarea:focus {
 	border: none;
 	border-radius: 15px;
 	padding: 5px 10px 5px 10px;
-  width: 70px;
+
 
 }
 .save:hover {
@@ -103,4 +95,16 @@ textarea:focus {
 
 .search input:focus {
 	outline: none;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.dark-mode {
+	background-color: black;
+}
+
+.dark-mode h1 {
+	color: white;
 }

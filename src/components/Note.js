@@ -1,13 +1,17 @@
 import { FaTimes } from "react-icons/fa";
 
-const Note = ({ id, text, date, handledeleteNote }) => {
-  return (
+
+
+
+
+const Note = ({ id, text, date, handleDeleteNote }) => {
+	return (
     <div className="note">
-      <span> {text}</span>
+      <span>{text}</span>
       <div className="note-footer">
         <small>{date}</small>
         <FaTimes
-          onClick={() => handledeleteNote(id)}
+          onClick={() => handleDeleteNote(id)}
           className="exit-icon"
           size="1.3em"
         />
@@ -15,4 +19,5 @@ const Note = ({ id, text, date, handledeleteNote }) => {
     </div>
   );
 };
+
 export default Note;
