@@ -1,7 +1,7 @@
 import AddNote from "./AddNote";
 import Note from "./Note";
 
-const NotesList = ({ notes, handleAddNote, deleteNote }) => {
+const NotesList = ({ notes, handleAddNote, handledeleteNote }) => {
   return (
     <div className="notes-list">
       {notes.map((note) => (
