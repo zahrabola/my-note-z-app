@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	min-height: 200vh;
+}
+.notes-list {
+	display: grid;
+	grid-gap:10px;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(350px, 1fr)
+	);
+}
+.note {
+  	background-color: #fef68a;
+
+	border-radius: 10px;
+	padding:20px;
+  margin: 20px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+.note-new{
+  background-color: #67d7cc;
+	border-radius: 10px;
+	padding:20px;
+  margin: 20px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.exit-icon:hover{
+  cursor: pointer;
+}
+small{
+  font-weight: lighter;
+  font-size: 15px;
+ 
+}
+textarea {
+	border: none;
+	resize: none;
+	background-color: #67d7cc;
+}
+textarea:focus {
+	outline: none;
+}
+
+
+.save {
+	background-color: #e1e1e1;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+  width: 70px;
+
+}
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
