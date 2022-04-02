@@ -6,7 +6,7 @@ const NotesList = ({ notes, handleAddNote, handledeleteNote }) => {
     <div className="notes-list">
       {notes.map((note) => (
         <Note
-          id={note.id}
+          id={notes.filter((note)=> note.text.toLowerCase().includes ())}
           text={note.text}
           date={note.date}
           handledeleteNote={handledeleteNote}
